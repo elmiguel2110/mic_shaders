@@ -1,0 +1,10 @@
+#include "stdosl.h"
+
+shader first_example(
+        float Time = 1.0,
+        output color col2 = (0.8))
+        
+        
+{
+    col2 = noise("perlin", P, Time);
+}
